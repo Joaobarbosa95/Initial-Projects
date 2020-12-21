@@ -30,10 +30,14 @@ container.addEventListener("click", (e) => {
       screen.innerHTML = "";
     } else if (operators.includes(dataSet)) {
       if (calc.length < 1) return;
-      if (dots === 1 && dataSet !== ".") {
+      if (dots === 1 && dataSet !== "." && !operators.includes(lastKey)) {
         dots = 0;
         update(dataSet);
-      } else if (dots === 0 && dataSet === ".") {
+      } else if (
+        dots === 0 &&
+        dataSet === "." &&
+        !operators.includes(lastKey)
+      ) {
         dots++;
         update(dataSet);
       } else if (
