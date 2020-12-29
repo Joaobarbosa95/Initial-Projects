@@ -44,6 +44,7 @@
 }
 
 .screen {
+  overflow: auto;
   grid-column: 1 / span 4;
   border: 1px solid grey;
   font-size: 30px;
@@ -51,7 +52,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .screen:hover {

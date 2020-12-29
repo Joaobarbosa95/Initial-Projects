@@ -1,1 +1,203 @@
+body {
+  margin: 0px;
+}
 
+.container {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  height: 100vh;
+  margin: 0px;
+}
+
+.visual {
+  position: absolute;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  left: 400px;
+  /* margin: 0px; */
+}
+
+.kit {
+  transform: scale(1.5);
+}
+.hatOne {
+  position: relative;
+  transform: scale(1.5);
+  right: 462px;
+  bottom: 327px;
+}
+
+.hatTwo {
+  position: relative;
+  transform: scale(1.5);
+  right: 218px;
+  bottom: 262px;
+}
+
+.mapping {
+  background-color: black;
+  color: white;
+  font-family: "Nova Flat", cursive;
+  font-size: 20px;
+  height: 100vh;
+  align-self: flex-end;
+  padding: 30px;
+  right: 0px;
+  position: relative;
+  top: 20px;
+}
+
+.btn-box {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  border: 3px solid rgb(179, 179, 179);
+  border-radius: 10%;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-mapping {
+  align-self: flex-start;
+  color: black;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.button-e {
+  position: relative;
+  right: 700px;
+  top: 90px;
+}
+
+.button-r {
+  position: relative;
+  right: 600px;
+  top: 135px;
+}
+
+.button-f {
+  position: relative;
+  right: 640px;
+  top: 305px;
+}
+
+.button-g {
+  position: relative;
+  right: 540px;
+  top: 160px;
+}
+
+.button-h {
+  position: relative;
+  right: 420px;
+  top: 137px;
+}
+
+.button-v {
+  position: relative;
+  right: 510px;
+  top: 230px;
+}
+
+.button-b {
+  position: relative;
+  right: 440px;
+  top: 190px;
+}
+
+.button-j {
+  position: relative;
+  right: 330px;
+  top: 63px;
+}
+
+.button-i {
+  position: relative;
+  right: 345px;
+  top: -125px;
+}
+
+.button-k {
+  position: relative;
+  right: 235px;
+  top: -157px;
+}
+
+.mapping-key {
+  display: flex;
+  align-self: center;
+}
+
+span {
+  align-self: center;
+}
+
+.title {
+  position: relative;
+  left: 40px;
+  bottom: 50px;
+  font-size: 50px;
+  font-family: "Yellowtail", cursive;
+  color: rgb(204, 49, 49);
+}
+
+.animation-crash {
+  animation-name: crash;
+  animation-duration: 500ms;
+}
+
+@keyframes crash {
+  0% {
+    transform: scale(1.5) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.5) rotate(10deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(0deg);
+  }
+}
+
+.animation-hihat {
+  animation-name: hiHat;
+  animation-duration: 500ms;
+}
+
+@keyframes hiHat {
+  0% {
+    transform: scale(1.5);
+    bottom: 262px;
+  }
+  50% {
+    transform: scale(1.5);
+    bottom: 259px;
+  }
+  100% {
+    transform: scale(1.5);
+    bottom: 262px;
+  }
+}
+
+.animation-btn {
+  animation-name: btn;
+  animation-duration: 500ms;
+}
+
+@keyframes btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

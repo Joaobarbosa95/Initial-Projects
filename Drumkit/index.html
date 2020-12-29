@@ -3,15 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" type="stylesheet">
-    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Nova+Flat&family=Yellowtail&display=swap" rel="stylesheet">  
+    <script defer src="script.js"></script>    
     <title>Drumkit</title>
 </head>
 <body>
-    <div class="drumkit-container">
-        <img src="drum-kit.png">
-        <img src="drum-hat.png">
+    <div class="container">
+        <div class="visual">
+            <div class="drumkit">
+                <h1 class="title">JavaScript Drum Kit</h1>
+                <img class="kit" src="drum-kit.png">
+                <img class="hatOne" src="drum-hat.png">
+                <img class="hatTwo" src="drum-hat2.png">
+            </div>
+            <div class="buttons">
+                <div class="button-r btn-box">R</div>
+                <div class="button-e btn-box">E</div>
+                <div class="button-f btn-box">F</div>
+                <div class="button-g btn-box">G</div>
+                <div class="button-h btn-box">H</div>
+                <div class="button-v btn-box">V</div>
+                <div class="button-b btn-box">B</div>
+                <div class="button-j btn-box">J</div>
+                <div class="button-i btn-box">I</div>
+                <div class="button-k btn-box">K</div>
+            </div>
+        </div>
+        
+        <div class="mapping">
+            <h1>Key Mapping</h1>
+            <br>
+            <div class="mapping-key"><span class="btn-box btn-mapping">E</span><span>Crash</span></div>
+            
+            <div class="mapping-key"><span class="btn-box btn-mapping">R</span><span>Ride</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">F</span><span>Floor Tom</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">G</span><span>Mid Tom</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">H</span><span>High Tom</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">V</span><span class="btn-box btn-mapping" class="mapping-key">B</span><span>Kick</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">J</span><span>Snare</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">I</span><span>Hi-Hat Open</span></div>
+            <div class="mapping-key"><span class="btn-box btn-mapping">K</span><span>Hi-Hat Closed</span></div>
+        </div>
     </div>
+
     
 </body>
 </html>
